@@ -18,8 +18,10 @@ from django.urls import path
 from django.urls import include
 
 import products
+import account
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('products.urls'))
+    path('',include('products.urls')),
+    path('account/',include('account.urls'))
 ]
